@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:paiement_app/screens/EnvoieScreen.dart';
+import 'package:paiement_app/screens/HistoriqueScreen.dart';
+import 'package:paiement_app/screens/QrcodeScreen.dart';
+import 'package:paiement_app/screens/ReceiveScreen.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -238,7 +242,14 @@ class Homepage extends StatelessWidget {
                     Column(
                       children: [
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Envoiescreen(),
+                              ),
+                            );
+                          },
                           child: Container(
                             height: height * 0.1,
                             width: width * 0.2,
@@ -260,7 +271,14 @@ class Homepage extends StatelessWidget {
                     Column(
                       children: [
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Receivescreen(),
+                              ),
+                            );
+                          },
                           child: Container(
                             height: height * 0.1,
                             width: width * 0.2,
@@ -282,7 +300,14 @@ class Homepage extends StatelessWidget {
                     Column(
                       children: [
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Qrcodescreen(),
+                              ),
+                            );
+                          },
                           child: Container(
                             height: height * 0.1,
                             width: width * 0.2,
@@ -304,7 +329,14 @@ class Homepage extends StatelessWidget {
                     Column(
                       children: [
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Historiquescreen(),
+                              ),
+                            );
+                          },
                           child: Container(
                             height: height * 0.1,
                             width: width * 0.2,
